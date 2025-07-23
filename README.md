@@ -97,14 +97,14 @@ pipenv run python main.py
 
 ```raw
 cam-feed-ai-classifier/
-├── LICENSE                 # Project license
-├── Pipfile                # Pipenv dependencies
-├── Pipfile.lock          # Locked dependency versions
-├── main.py               # Main application
-├── pyproject.toml        # Project configuration
-├── .gitignore           # Git ignore rules
-├── .pre-commit-config.yaml # Pre-commit hooks
-└── README.md            # This file
+├── LICENSE                   # Project license
+├── Pipfile                   # Pipenv dependencies
+├── Pipfile.lock              # Locked dependency versions
+├── main.py                   # Main application
+├── pyproject.toml            # Project configuration
+├── .gitignore                # Git ignore rules
+├── .pre-commit-config.yaml   # Pre-commit hooks
+└── README.md                 # This file
 ```
 
 ## 🔧 Configuration
