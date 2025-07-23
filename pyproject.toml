@@ -1,0 +1,51 @@
+# Ruff configuration
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+exclude = [
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".tox",
+    ".venv",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "migrations",
+    "__pycache__",
+    ".env",
+    "venv",
+]
+
+[tool.ruff.lint]
+select = [
+    "F", # Pyflakes
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "I", # Import sorting
+
+]
+ignore = [
+    "E501", # Line too long
+    "E711", # Comparison to None
+    "F403", # Star imports
+    "F821", # Undefined name
+    "E741", # Ambiguous variable name
+    "E402", # Module level import not at top
+    "F841", # Local variable assigned but never used
+
+]
+
+[tool.ruff.lint.isort]
+# Import sorting configuration
+split-on-trailing-comma = true
+force-single-line = false
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
